@@ -77,6 +77,7 @@
         {
           "type": "git",
           "url": "https://github.com/Diego-Ivan/Flowtime.git",
+          "tag": "v1.5.0",
           "commit": "e911709ee6a7fd51445abfd2d5f98115a7b1e515"
         }
       ]
