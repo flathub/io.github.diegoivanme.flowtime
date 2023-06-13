@@ -1,7 +1,7 @@
 {
   "app-id": "io.github.diegoivanme.flowtime",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "43",
+  "runtime-version": "44",
   "sdk": "org.gnome.Sdk",
   "command": "flowtime",
   "finish-args": [
@@ -32,7 +32,7 @@
         {
           "type": "git",
           "url": "https://github.com/Diego-Ivan/Flowtime.git",
-          "commit": "8f125f2bc5ffafbf4799bbdef45413fbdd226810"
+          "commit": "95f407f51c736335f69c8e205aab19bb5a623810"
         }
       ]
     }
