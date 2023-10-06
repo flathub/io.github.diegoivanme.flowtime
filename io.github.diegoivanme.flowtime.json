@@ -1,7 +1,7 @@
 {
   "app-id": "io.github.diegoivanme.flowtime",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "44",
+  "runtime-version": "45",
   "sdk": "org.gnome.Sdk",
   "command": "flowtime",
   "finish-args": [
@@ -24,6 +24,17 @@
     "*.a"
   ],
   "modules": [
+    {
+  "name": "blueprint-compiler",
+  "buildsystem": "meson",
+  "sources": [
+    {
+      "type": "git",
+      "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler",
+      "tag": "v0.10.0"
+    }
+  ]
+},
     {
       "name": "libportal",
       "buildsystem": "meson",
@@ -50,7 +61,7 @@
         {
           "type": "git",
           "url": "https://github.com/Diego-Ivan/Flowtime.git",
-          "commit": "44bfdd5da4cf50691b668289a72ab84b9e43972b"
+          "commit": "f80b2c8a2be9af1f91232226eeb97d8a92bfadf0"
         }
       ]
     }
