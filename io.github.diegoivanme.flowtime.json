@@ -1,7 +1,7 @@
 {
   "app-id": "io.github.diegoivanme.flowtime",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "49",
+  "runtime-version": "50",
   "sdk": "org.gnome.Sdk",
   "command": "flowtime",
   "finish-args": [
@@ -13,15 +13,10 @@
   ],
   "cleanup": [
     "/include",
+    "/lib/girepository-1.0",
     "/lib/pkgconfig",
-    "/man",
-    "/share/doc",
-    "/share/gtk-doc",
-    "/share/man",
-    "/share/pkgconfig",
-    "/share/vala",
-    "*.la",
-    "*.a"
+    "/share/gir-1.0",
+    "/share/vala"
   ],
   "modules": [
     {
@@ -50,6 +45,7 @@
         {
           "type": "git",
           "url": "https://github.com/Diego-Ivan/Flowtime.git",
+          "tag": "v6.5",
           "commit": "e6bc082a30e2e135086ad91435451b7da3751465"
         }
       ]
