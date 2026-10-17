@@ -1,54 +1,28 @@
 {
-  "app-id": "io.github.diegoivanme.flowtime",
-  "runtime": "org.gnome.Platform",
-  "runtime-version": "50",
-  "sdk": "org.gnome.Sdk",
-  "command": "flowtime",
-  "finish-args": [
-    "--share=ipc",
-    "--socket=fallback-x11",
-    "--socket=pulseaudio",
-    "--socket=wayland",
-    "--device=dri"
-  ],
-  "cleanup": [
-    "/include",
-    "/lib/girepository-1.0",
-    "/lib/pkgconfig",
-    "/share/gir-1.0",
-    "/share/vala"
-  ],
-  "modules": [
-    {
-      "name": "libportal",
-      "buildsystem": "meson",
-      "config-opts": [
-        "-Dbackend-gtk3=disabled",
-        "-Dbackend-gtk4=enabled",
-        "-Dbackend-qt5=disabled",
-        "-Ddocs=false",
-        "-Dtests=false"
-      ],
-      "sources": [
+    "app-id": "io.github.diegoivanme.flowtime",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "51",
+    "sdk": "org.gnome.Sdk",
+    "command": "flowtime",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=fallback-x11",
+        "--socket=pulseaudio",
+        "--socket=wayland",
+        "--device=dri"
+    ],
+    "modules": [
         {
-          "type": "archive",
-          "url": "https://github.com/flatpak/libportal/releases/download/0.9.1/libportal-0.9.1.tar.xz",
-          "sha256": "de801ee349ed3c255a9af3c01b1a401fab5b3fc1c35eb2fd7dfb35d4b8194d7f"
+            "name": "flowtime",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/Diego-Ivan/Flowtime.git",
+                    "tag": "v6.5",
+                    "commit": "e6bc082a30e2e135086ad91435451b7da3751465"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "name": "flowtime",
-      "builddir": true,
-      "buildsystem": "meson",
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://github.com/Diego-Ivan/Flowtime.git",
-          "tag": "v6.5",
-          "commit": "e6bc082a30e2e135086ad91435451b7da3751465"
-        }
-      ]
-    }
-  ]
+    ]
 }
