@@ -21,6 +21,10 @@
                     "url": "https://github.com/Diego-Ivan/Flowtime.git",
                     "tag": "v6.5",
                     "commit": "e6bc082a30e2e135086ad91435451b7da3751465"
+                },
+                {
+                    "type": "patch",
+                    "path": "fix-appdata.patch"
                 }
             ]
         }
