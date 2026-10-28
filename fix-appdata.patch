@@ -1,0 +1,26 @@
+From 8dcb81f450a079a661fb5db03dec20919871d488 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Wed, 28 Oct 2026 22:18:45 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+---
+ data/io.github.diegoivanme.flowtime.appdata.xml.in | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/data/io.github.diegoivanme.flowtime.appdata.xml.in b/data/io.github.diegoivanme.flowtime.appdata.xml.in
+index 740f6d2..d35ba8b 100644
+--- a/data/io.github.diegoivanme.flowtime.appdata.xml.in
++++ b/data/io.github.diegoivanme.flowtime.appdata.xml.in
+@@ -29,6 +29,9 @@
+   </screenshots>
+ 
+   <releases>
++    <release version="6.5" date="2024-03-26">
++      <url>https://github.com/Diego-Ivan/Flowtime/releases/tag/v6.5</url>
++    </release>
+     <release version="6.1" date="2023-11-10">
+       <description translatable="no">
+         <p>Flowtime v6.1 has arrived with a couple of minor fixes and improvements</p>
+--
+libgit2 1.9.7
+
